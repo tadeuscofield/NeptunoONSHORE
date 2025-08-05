@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DESCOMPETRO especializado em descomissionamento de instalações petrolíferas ANP 817/2020.">
+    <meta name="keywords" content="DESCOMPETRO, descomissionamento, ANP 817, instalações petrolíferas, RDI, PDI, resolução ANP">
+    <meta name="author" content="DESCOMPETRO">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DESCOMPETRO - Descomissionamento ANP 817/2020">
+    <meta property="og:description" content="Tire suas dúvidas sobre descomissionamento de instalações petrolíferas com o DESCOMPETRO especializado em ANP 817/2020">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2e8b57">
     <title>DESCOMPETRO - Descomissionamento ANP 817/2020</title>
     <style>
         :root {
+            /* Light theme colors */
             --bg-color: #f0f8ff;
             --container-bg: white;
             --header-bg: #2e8b57;
@@ -24,6 +33,7 @@
         }
 
         [data-theme="dark"] {
+            /* Dark theme colors */
             --bg-color: #1a1a1a;
             --container-bg: #2d2d2d;
             --header-bg: #1e5f3f;
@@ -97,7 +107,6 @@
             padding: 10px;
             border-radius: 5px;
             transition: all 0.3s ease;
-            line-height: 1.5;
         }
         .user-message {
             background: var(--user-msg-bg);
@@ -111,9 +120,6 @@
             background: var(--bot-msg-bg);
             margin-right: 20%;
             color: var(--text-color);
-        }
-        .message strong {
-            font-weight: bold;
         }
         .chat-input {
             display: flex;
@@ -168,35 +174,137 @@
             z-index: 1000;
             text-decoration: none;
         }
+        .partnership-button {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+            font-size: 28px;
+        }
         .whatsapp-button:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        }
+        .partnership-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
         }
         .whatsapp-button svg {
             width: 32px;
             height: 32px;
             fill: white;
         }
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-            color: var(--text-color);
-            opacity: 0.7;
-            margin-top: 20px;
+        
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .chat-container {
+                max-width: 100%;
+                margin: 0;
+                border-radius: 8px;
+            }
+            .chat-header {
+                padding: 15px;
+            }
+            .chat-header h1 {
+                font-size: 1.5rem;
+                margin: 0 0 10px 0;
+            }
+            .chat-header p {
+                font-size: 0.9rem;
+                margin: 0;
+            }
+            .theme-toggle {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+                top: 15px;
+                right: 15px;
+            }
+            .chat-messages {
+                height: 350px;
+                padding: 15px;
+            }
+            .message {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            .user-message {
+                margin-left: 10%;
+            }
+            .bot-message {
+                margin-right: 10%;
+            }
+            .chat-input {
+                padding: 15px;
+            }
+            .chat-input input {
+                padding: 8px;
+                font-size: 16px; /* Previne zoom no iOS */
+            }
+            .chat-input button {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+            .partnership-button {
+                width: 50px;
+                height: 50px;
+                bottom: 75px;
+                right: 15px;
+                font-size: 24px;
+            }
+            .whatsapp-button svg {
+                width: 28px;
+                height: 28px;
+            }
         }
         
-        @media (max-width: 768px) {
-            body { padding: 10px; }
-            .chat-container { max-width: 100%; margin: 0; border-radius: 8px; }
-            .chat-header { padding: 15px; }
-            .theme-toggle { width: 35px; height: 35px; font-size: 16px; top: 15px; right: 15px; }
-            .chat-messages { height: 350px; padding: 15px; }
-            .message { padding: 8px; font-size: 0.9rem; }
-            .user-message { margin-left: 10%; }
-            .bot-message { margin-right: 10%; }
-            .chat-input { padding: 15px; }
-            .whatsapp-button { width: 50px; height: 50px; bottom: 15px; right: 15px; }
+        @media (max-width: 480px) {
+            .chat-messages {
+                height: 300px;
+                padding: 10px;
+            }
+            .user-message, .bot-message {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            line-height: 1.5;
+        }
+        .message strong {
+            font-weight: bold;
+        }
+        .message a {
+            color: var(--button-bg);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .message a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -207,16 +315,15 @@
                 🌙
             </button>
             <h1>🛠️ DESCOMPETRO</h1>
-            <p>Especialista em descomissionamento ANP 817/2020</p>
+            <p>Faça perguntas sobre descomissionamento resolução ANP 817/2020</p>
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="message bot-message">
-                <strong>✅ Sistema funcionando no Vercel!</strong><br><br>
                 Olá! Sou o DESCOMPETRO. Como posso ajudar com descomissionamento ANP 817/2020?<br><br>
-                <strong>🛠️ Teste o sistema:</strong><br>
-                • Digite "<strong>descomissionamento</strong>" para informações da ANP 817/2020<br>
-                • Digite "<strong>teste</strong>" para verificar funcionamento<br>
-                • Use o botão 🌙/☀️ para alternar tema
+                <strong>🛠️ Posso responder sobre:</strong><br>
+                • Resolução ANP 817/2020<br>
+                • Descomissionamento (prazos, etapas, custos)<br>
+                • Glossário das siglas de descomissionamento
             </div>
         </div>
         <div class="chat-input">
@@ -225,17 +332,22 @@
         </div>
     </div>
 
+    <!-- Botão flutuante de Parceria -->
+    <a href="https://wa.me/5521964462281?text=oi, gostaria de me tornar um parceiro!" class="partnership-button" target="_blank" title="Entre em contato para parceria">
+        🤖
+    </a>
+
+    <!-- Botão flutuante do WhatsApp -->
     <a href="https://wa.me/5521964462281?text=Gostaria de sugerir uma atualização." class="whatsapp-button" target="_blank" title="Enviar sugestão via WhatsApp">
         <svg viewBox="0 0 24 24">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
         </svg>
     </a>
 
-    <footer>
-        Desenvolvido por <strong>Eng. Ambiental Tadeu Santana</strong>
-    </footer>
-
     <script>
+        const API_URL = window.location.origin + '/api';
+        
+        // Dark mode functionality
         function initializeTheme() {
             const savedTheme = localStorage.getItem('chatbot-theme') || 'light';
             const themeToggle = document.getElementById('themeToggle');
@@ -268,6 +380,7 @@
             }
         }
         
+        // Initialize theme on page load
         document.addEventListener('DOMContentLoaded', initializeTheme);
         
         function addMessage(message, isUser = false) {
@@ -278,10 +391,14 @@
             if (isUser) {
                 messageDiv.textContent = message;
             } else {
+                // Formatação básica de markdown para mensagens do bot
                 let formattedMessage = message
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/^• /gm, '• ')
-                    .replace(/\n/g, '<br>');
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // **bold**
+                    .replace(/^• /gm, '• ') // bullet points
+                    .replace(/^📋|^📌|^⏰|^🎯|^📍|^⚖️|^📎|^🔤|^❓|^🤖|^💬/gm, '<strong>$&</strong>') // emojis em negrito
+                    .replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank">$1</a>') // links
+                    .replace(/\n/g, '<br>'); // quebras de linha
+                
                 messageDiv.innerHTML = formattedMessage;
             }
             
@@ -289,7 +406,7 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
         
-        function sendMessage() {
+        async function sendMessage() {
             const input = document.getElementById('messageInput');
             const message = input.value.trim();
             
@@ -298,6 +415,7 @@
             addMessage(message, true);
             input.value = '';
             
+            // Resposta temporária offline para testar o Vercel
             let resposta = '';
             const msgLower = message.toLowerCase();
 
@@ -311,50 +429,20 @@ Descomissionamento é o processo de desativação de instalações de petróleo 
 • **RDI:** 2 anos antes do término da concessão
 • **PDI:** 1 ano antes do término da concessão
 
-**🎯 Sistema funcionando perfeitamente no Vercel!** ✅`;
-
+**🎯 Sistema funcionando no Vercel!** ✅`;
             } else if (msgLower.includes('teste') || msgLower.includes('test')) {
-                resposta = `**✅ TESTE REALIZADO COM SUCESSO!**
-
-O DESCOMPETRO está **100% operacional** no Vercel!
-
-**🎯 Funcionalidades ativas:**
-• Chat interativo funcionando
-• Tema claro/escuro operacional
-• Design responsivo ativo
-• Base de conhecimento ANP 817/2020 carregada
-
-**💬 Sistema pronto para uso!**`;
-
-            } else if (msgLower.includes('rdi')) {
-                resposta = `**📋 RDI - Relatório de Descomissionamento**
-
-**⏰ Prazo:** 2 anos antes do término da concessão
-**📎 Conteúdo:** Diagnóstico e estudos preliminares
-**🔤 Base legal:** Resolução ANP 817/2020, Art. 8º`;
-
-            } else if (msgLower.includes('pdi')) {
-                resposta = `**📌 PDI - Plano de Descomissionamento**
-
-**⏰ Prazo:** 1 ano antes do término da concessão  
-**📎 Conteúdo:** Planejamento executivo detalhado
-**🔤 Base legal:** Resolução ANP 817/2020, Art. 9º`;
-
+                resposta = '✅ **SISTEMA FUNCIONANDO!** O DESCOMPETRO está operacional no Vercel!';
             } else {
                 resposta = `Olá! Sou o **DESCOMPETRO** 🛠️
 
-**✅ Sistema 100% funcional no Vercel!**
+**✅ Sistema funcionando no Vercel!**
 
-**💬 Teste o conhecimento:**
-• Digite "**descomissionamento**" - Info ANP 817/2020
-• Digite "**RDI**" - Relatório de Descomissionamento  
-• Digite "**PDI**" - Plano de Descomissionamento
-• Digite "**teste**" - Verificar funcionamento
+Digite "**descomissionamento**" para testar o conhecimento sobre ANP 817/2020.
 
-**🌙/☀️ Use o botão no canto para alternar tema!**`;
+💬 Em breve todas as funcionalidades estarão ativas!`;
             }
             
-            setTimeout(() => addMessage(resposta), 500);
+            addMessage(resposta);
         }
         
         function handleKeyPress(event) {
@@ -363,5 +451,10 @@ O DESCOMPETRO está **100% operacional** no Vercel!
             }
         }
     </script>
+
+    <!-- Rodapé com créditos -->
+    <footer style="text-align: center; padding: 15px; font-size: 12px; color: var(--text-color); opacity: 0.7; margin-top: 20px;">
+        Desenvolvido por <strong>Eng. Ambiental Tadeu Santana</strong>
+    </footer>
 </body>
-</html>
+</html> 
