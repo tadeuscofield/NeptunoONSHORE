@@ -933,7 +933,13 @@ Clique no botão do WhatsApp para enviar uma sugestão!`;
     res.json({ success: true, response: defaultResponse });
 });
 
-app.listen(PORT, () => {
-    console.log('🚀 Servidor rodando na porta ' + PORT);
-    console.log('📱 Abra: http://localhost:3001');
-});
+// Para desenvolvimento local
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log('🚀 Servidor rodando na porta ' + PORT);
+        console.log('📱 Abra: http://localhost:' + PORT);
+    });
+}
+
+// Para Vercel
+module.exports = app;
