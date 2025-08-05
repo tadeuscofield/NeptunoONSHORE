@@ -415,20 +415,34 @@
             addMessage(message, true);
             input.value = '';
             
-            try {
-                const response = await fetch(`${API_URL}/chat`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ message })
-                });
-                
-                const data = await response.json();
-                addMessage(data.response);
-            } catch (error) {
-                addMessage('Erro ao conectar com o servidor. Tente novamente.');
+            // Resposta temporária offline para testar o Vercel
+            let resposta = '';
+            const msgLower = message.toLowerCase();
+
+            if (msgLower.includes('descomissionamento')) {
+                resposta = `**🛠️ DESCOMISSIONAMENTO - ANP 817/2020**
+
+**📋 Definição:**
+Descomissionamento é o processo de desativação de instalações de petróleo e gás ao final de sua vida útil, seguindo as diretrizes da Resolução ANP 817/2020.
+
+**⏰ Prazos Principais:**
+• **RDI:** 2 anos antes do término da concessão
+• **PDI:** 1 ano antes do término da concessão
+
+**🎯 Sistema funcionando no Vercel!** ✅`;
+            } else if (msgLower.includes('teste') || msgLower.includes('test')) {
+                resposta = '✅ **SISTEMA FUNCIONANDO!** O DESCOMPETRO está operacional no Vercel!';
+            } else {
+                resposta = `Olá! Sou o **DESCOMPETRO** 🛠️
+
+**✅ Sistema funcionando no Vercel!**
+
+Digite "**descomissionamento**" para testar o conhecimento sobre ANP 817/2020.
+
+💬 Em breve todas as funcionalidades estarão ativas!`;
             }
+            
+            addMessage(resposta);
         }
         
         function handleKeyPress(event) {
