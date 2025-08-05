@@ -936,8 +936,8 @@ Clique no botão do WhatsApp para enviar uma sugestão!`;
 // Para desenvolvimento local
 if (process.env.NODE_ENV !== 'production') {
     app.listen(PORT, () => {
-        console.log('🚀 Servidor rodando na porta ' + PORT);
-        console.log('📱 Abra: http://localhost:' + PORT);
+        console.log('Servidor rodando na porta ' + PORT);
+        console.log('Abra: http://localhost:' + PORT);
     });
 }
 
