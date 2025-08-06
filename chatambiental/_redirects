@@ -1,0 +1,9 @@
+# Netlify redirects
+/*    /index.html   200
+
+# Specific routes
+/home    /index.html   200
+/chat    /index.html   200
+
+# SPA fallback
+/404     /index.html   200
