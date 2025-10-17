@@ -1,0 +1,58 @@
+# Vercel Ignore File
+# Arquivos que o Vercel NÃO deve processar
+
+# Development
+node_modules
+.git
+.gitignore
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts (Vercel fará o build)
+build
+dist
+.next
+out
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage
+.nyc_output
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Documentation markdown (não precisa no deploy)
+*.md
+!README.md
+
+# Documentação extra
+ANALISE_COMPLETA.md
+ARQUITETURA.md
+EXEMPLOS_CODIGO.md
+GUIA_INICIO_RAPIDO.md
+GUIA_RAPIDO.md
+INDICE.md
+MELHORIAS_IMPLEMENTADAS.md
+RESUMO_IMPLEMENTACAO.md
+START_HERE.md
+TESTES.md
+
+# Scripts de teste
+test-nlp.js
