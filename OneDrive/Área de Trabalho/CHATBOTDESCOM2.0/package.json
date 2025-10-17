@@ -3,7 +3,6 @@
   "version": "2.1.0",
   "description": "PDIDESCOM - Portal de Consultas sobre Descomissionamento com IA - ANP 817/2020 + NR 30 + NEPTUNO",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -22,10 +21,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "vercel-build": "CI=false react-scripts build"
+    "vercel-build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
