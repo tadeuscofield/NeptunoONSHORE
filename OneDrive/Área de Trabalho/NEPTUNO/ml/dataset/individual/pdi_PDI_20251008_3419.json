@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_3419",
+  "timestamp": "2025-10-08T14:40:30.970653",
+  "bacia": "Bacia do Ceará",
+  "num_pocos": 11,
+  "profundidade_media": 2130.61,
+  "lamina_agua": 272.26,
+  "distancia_costa": 299.63,
+  "tipo_instalacao": "manifold",
+  "tecnica_selecionada": "rigs_to_reefs",
+  "custo_total_usd": 263.3,
+  "custo_pa_usd": 184.87,
+  "custo_remocao_usd": 10.77,
+  "custo_mobilizacao_usd": 20.13,
+  "duracao_meses": 20,
+  "num_riscos_altos": 3,
+  "prob_aprovacao_anp": 0.656,
+  "completude_pct": 76.3,
+  "complexidade": 2.23,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "rasa",
+  "classe_distancia": "distante"
+}

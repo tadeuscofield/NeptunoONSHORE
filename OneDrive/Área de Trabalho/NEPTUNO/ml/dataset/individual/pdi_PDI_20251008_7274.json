@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_7274",
+  "timestamp": "2025-10-08T14:40:30.951631",
+  "bacia": "Bacia de Sergipe-Alagoas",
+  "num_pocos": 3,
+  "profundidade_media": 2379.8,
+  "lamina_agua": 897.58,
+  "distancia_costa": 149.65,
+  "tipo_instalacao": "dutos",
+  "tecnica_selecionada": "remocao_parcial",
+  "custo_total_usd": 81.67,
+  "custo_pa_usd": 51.81,
+  "custo_remocao_usd": 8.77,
+  "custo_mobilizacao_usd": 6.34,
+  "duracao_meses": 5,
+  "num_riscos_altos": 0,
+  "prob_aprovacao_anp": 0.835,
+  "completude_pct": 88.3,
+  "complexidade": 1.25,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "media",
+  "classe_distancia": "media"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_8359",
+  "timestamp": "2025-10-08T14:40:30.917260",
+  "bacia": "Bacia de Camamu-Almada",
+  "num_pocos": 3,
+  "profundidade_media": 2466.29,
+  "lamina_agua": 1032.39,
+  "distancia_costa": 194.93,
+  "tipo_instalacao": "fpso",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 787.95,
+  "custo_pa_usd": 78.15,
+  "custo_remocao_usd": 502.86,
+  "custo_mobilizacao_usd": 77.24,
+  "duracao_meses": 8,
+  "num_riscos_altos": 0,
+  "prob_aprovacao_anp": 0.925,
+  "completude_pct": 98.5,
+  "complexidade": 1.47,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "media",
+  "classe_distancia": "distante"
+}

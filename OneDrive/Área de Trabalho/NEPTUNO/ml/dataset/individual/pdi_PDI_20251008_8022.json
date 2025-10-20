@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_8022",
+  "timestamp": "2025-10-08T14:40:30.938303",
+  "bacia": "Bacia de Campos",
+  "num_pocos": 5,
+  "profundidade_media": 2120.77,
+  "lamina_agua": 2898.33,
+  "distancia_costa": 115.32,
+  "tipo_instalacao": "plataforma_fixa",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 487.14,
+  "custo_pa_usd": 167.12,
+  "custo_remocao_usd": 143.31,
+  "custo_mobilizacao_usd": 45.89,
+  "duracao_meses": 14,
+  "num_riscos_altos": 6,
+  "prob_aprovacao_anp": 0.556,
+  "completude_pct": 80.5,
+  "complexidade": 2.33,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "profunda",
+  "classe_distancia": "media"
+}

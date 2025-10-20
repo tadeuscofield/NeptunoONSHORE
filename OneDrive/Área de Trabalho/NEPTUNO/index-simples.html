@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEPTUNO - Sistema PDI</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- React 18 -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e40af 0%, #7c3aed 50%, #db2777 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: white;
+      transition: opacity 0.5s ease;
+    }
+    .loading-logo { font-size: 80px; margin-bottom: 24px; }
+    .loading-title { font-size: 42px; font-weight: 700; margin-bottom: 12px; }
+    .loading-subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 48px; }
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-logo">🏭</div>
+    <div class="loading-title">NEPTUNO</div>
+    <div class="loading-subtitle">Sistema de Plano de Desativação de Instalações</div>
+    <div class="loading-spinner"></div>
+    <div style="position: absolute; bottom: 40px; font-size: 14px; opacity: 0.7;">
+      Versão 2.0 | Conforme ANP 817/2020
+    </div>
+  </div>
+
+  <!-- App Root -->
+  <div id="root"></div>
+
+  <!-- Remove loading -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const loading = document.getElementById('loading-screen');
+        if (loading) {
+          loading.style.opacity = '0';
+          setTimeout(() => loading.style.display = 'none', 500);
+        }
+      }, 1500);
+    });
+  </script>
+
+  <!-- PDI Calculations -->
+  <script src="./PDICalculos.js"></script>
+
+  <!-- Check if loaded -->
+  <script>
+    console.log('React:', typeof React !== 'undefined' ? 'OK' : 'ERRO');
+    console.log('ReactDOM:', typeof ReactDOM !== 'undefined' ? 'OK' : 'ERRO');
+    console.log('PDICalculos:', typeof window.PDICalculos !== 'undefined' ? 'OK' : 'ERRO');
+  </script>
+
+  <!-- Simple App Test -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function SimpleApp() {
+      const [loading, setLoading] = useState(true);
+      const [error, setError] = useState(null);
+
+      useEffect(() => {
+        try {
+          console.log('App montado com sucesso!');
+          setLoading(false);
+        } catch (err) {
+          console.error('Erro ao montar app:', err);
+          setError(err.message);
+          setLoading(false);
+        }
+      }, []);
+
+      if (loading) {
+        return (
+          <div className="flex items-center justify-center min-h-screen bg-gray-100">
+            <div className="text-center">
+              <div className="text-6xl mb-4">⏳</div>
+              <div className="text-xl font-semibold">Carregando...</div>
+            </div>
+          </div>
+        );
+      }
+
+      if (error) {
+        return (
+          <div className="flex items-center justify-center min-h-screen bg-red-50">
+            <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg">
+              <div className="text-6xl mb-4 text-center">❌</div>
+              <h1 className="text-2xl font-bold text-red-600 mb-4 text-center">Erro!</h1>
+              <p className="text-gray-700">{error}</p>
+            </div>
+          </div>
+        );
+      }
+
+      return (
+        <div className="min-h-screen bg-gray-50">
+          {/* Header */}
+          <header className="bg-white border-b shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-20">
+                <div className="flex items-center space-x-4">
+                  <div className="text-5xl">🏭</div>
+                  <div>
+                    <h1 className="text-2xl font-bold text-gray-900">NEPTUNO</h1>
+                    <p className="text-sm text-gray-600">Plano de Desativação de Instalações</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          {/* Content */}
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="bg-white rounded-xl shadow-md p-8">
+              <div className="text-center mb-8">
+                <div className="text-6xl mb-4">✅</div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  Sistema Funcionando!
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  O NEPTUNO foi carregado com sucesso.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                  <div className="text-2xl mb-2">⚛️</div>
+                  <div className="font-semibold text-green-900">React 18</div>
+                  <div className="text-sm text-green-700">Carregado</div>
+                </div>
+
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <div className="text-2xl mb-2">🎨</div>
+                  <div className="font-semibold text-blue-900">Tailwind CSS</div>
+                  <div className="text-sm text-blue-700">Ativo</div>
+                </div>
+
+                <div className={`border rounded-lg p-4 ${
+                  window.PDICalculos ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'
+                }`}>
+                  <div className="text-2xl mb-2">🧮</div>
+                  <div className={`font-semibold ${window.PDICalculos ? 'text-green-900' : 'text-red-900'}`}>
+                    PDICalculos
+                  </div>
+                  <div className={`text-sm ${window.PDICalculos ? 'text-green-700' : 'text-red-700'}`}>
+                    {window.PDICalculos ? 'Carregado' : 'Erro!'}
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 className="font-bold text-yellow-900 mb-2">⚠️ Modo de Teste Simples</h3>
+                <p className="text-yellow-800 text-sm">
+                  Esta é uma versão simplificada para testar o carregamento básico.
+                  O componente PDIComponent completo será carregado em seguida.
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+      );
+    }
+
+    // Render
+    console.log('Iniciando render...');
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<SimpleApp />);
+    console.log('Render completo!');
+  </script>
+</body>
+</html>

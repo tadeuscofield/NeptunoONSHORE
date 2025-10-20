@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "titulo": "PDI - P-35 FPSO",
+    "operador": "Petróleo Brasileiro S.A. - PETROBRAS",
+    "tipo": "Caso Real",
+    "data_geracao": "09/10/2025 07:16:11"
+  },
+  "referencia": {
+    "nomeOperador": "Petróleo Brasileiro S.A. - PETROBRAS",
+    "cnpj": "33.000.167/0001-01",
+    "numeroContrato": "ANP-001/2024-PDI-P35",
+    "tipoPDI": "executivo",
+    "tipoInstalacao": "maritima",
+    "bacia": "Bacia de Campos",
+    "bloco": "BC-100",
+    "campo": "Campo de Marlim",
+    "latitude": "-22.7500",
+    "longitude": "-40.2500",
+    "profundidade": "1.360",
+    "distanciaCosta": "120",
+    "dataInicio": "2024-01-15",
+    "dataTermino": "2027-12-31",
+    "dataSubmissao": "2024-06-15"
+  },
+  "motivacoes": {
+    "tipo": "fim_vida_util",
+    "justificativa": "O FPSO P-35, instalado em 1998 no Campo de Marlim, completou 26 anos de operação\n        em 2024. Após extensas avaliações técnicas, a Petrobras identificou que os custos de manutenção e\n        modernização excederiam os benefícios econômicos da continuidade operacional. A produção declinou\n        de 180.000 bpd (2005) para menos de 40.000 bpd (2024). O navio possui histórico de 3 paradas não\n        programadas nos últimos 2 anos, com custos de reparo superiores a USD 45 milhões. A decisão de\n        desativação está alinhada com o planejamento estratégico da companhia e regulamentações da ANP.",
+    "condicoesAtuais": "CONDIÇÕES OPERACIONAIS ATUAIS (2024):\n\n• Produção atual: 38.500 bpd (21% da capacidade original de 180.000 bpd)\n• Última grande parada: Março/2023 (45 dias, custo: USD 23M)\n• Integridade estrutural: Casco com 67% de vida útil consumida\n• Sistemas críticos:\n  - Sistema de injeção de água: 45% de eficiência (original: 92%)\n  - Geradores principais: 2 de 5 em operação (3 desativados por falhas recorrentes)\n  - Sistema de ancoragem: 6 de 12 linhas em condições nominais\n  - Sistema de tratamento de óleo: Eficiência de 62% (original: 95%)\n\n• Inspeções recentes (Dez/2023):\n  - Corrosão severa em 12% dos tanques de lastro\n  - Fadiga em 8 pontos críticos da estrutura do casco\n  - Sistema de controle de incêndio requer retrofit completo (USD 8.5M)\n\n• Certificações:\n  - Certificado de Classe ABS válido até Jun/2025 (renovação estimada em USD 12M)\n  - Licença ambiental IBAMA válida até Dez/2024 (renovação em análise)"
+  },
+  "inventario": {
+    "pocos": [
+      {
+        "nome": "MRL-1",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 4200,
+        "bsw": 78,
+        "dataComissionamento": "1998-06-15"
+      },
+      {
+        "nome": "MRL-2",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 3800,
+        "bsw": 82,
+        "dataComissionamento": "1998-07-22"
+      },
+      {
+        "nome": "MRL-3",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 3500,
+        "bsw": 85,
+        "dataComissionamento": "1998-09-10"
+      },
+      {
+        "nome": "MRL-4",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 2900,
+        "bsw": 88,
+        "dataComissionamento": "1999-03-05"
+      },
+      {
+        "nome": "MRL-5H",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 5100,
+        "bsw": 72,
+        "dataComissionamento": "2005-11-20",
+        "observacao": "Poço horizontal"
+      },
+      {
+        "nome": "MRL-6H",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 4600,
+        "bsw": 75,
+        "dataComissionamento": "2006-04-18",
+        "observacao": "Poço horizontal"
+      },
+      {
+        "nome": "MRL-INJ-1",
+        "tipo": "injetor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 8500,
+        "dataComissionamento": "1999-01-10",
+        "observacao": "Injeção de água"
+      },
+      {
+        "nome": "MRL-INJ-2",
+        "tipo": "injetor",
+        "profundidade": 1360,
+        "status": "ativo",
+        "vazao": 7200,
+        "dataComissionamento": "2000-06-25",
+        "observacao": "Injeção de água"
+      },
+      {
+        "nome": "MRL-7",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "abandonado",
+        "dataComissionamento": "2000-08-15",
+        "dataAbandono": "2018-03-22",
+        "observacao": "Abandonado por falha de coluna"
+      },
+      {
+        "nome": "MRL-8",
+        "tipo": "produtor",
+        "profundidade": 1360,
+        "status": "abandonado",
+        "dataComissionamento": "2001-02-10",
+        "dataAbandono": "2019-11-08",
+        "observacao": "Abandonado por depleção do reservatório"
+      }
+    ],
+    "instalacoes": [
+      {
+        "tipo": "FPSO",
+        "nome": "P-35",
+        "capacidade": "180.000 bpd",
+        "ano": 1998,
+        "comprimento": 285,
+        "largura": 63,
+        "calado": 22,
+        "deslocamento": 310000,
+        "observacoes": "Conversão do navio petroleiro Suezmax 'Japan Violet'. Sistema de ancoragem spread mooring com 12 linhas. Capacidade de armazenamento: 1.6 milhões de barris."
+      }
+    ],
+    "linhas": [
+      {
+        "tipo": "Riser Flexível",
+        "quantidade": 8,
+        "diametro": "8 polegadas",
+        "comprimento_total": 13600,
+        "observacao": "6 risers de produção + 2 risers de injeção de água"
+      },
+      {
+        "tipo": "Flowline Rígido",
+        "quantidade": 4,
+        "diametro": "12 polegadas",
+        "comprimento_total": 8200,
+        "observacao": "Interligação entre manifolds submarinos"
+      },
+      {
+        "tipo": "Umbilical",
+        "quantidade": 3,
+        "diametro": "6 polegadas",
+        "comprimento_total": 5100,
+        "observacao": "Controle hidráulico e elétrico"
+      }
+    ],
+    "equipamentos_submarinos": [
+      {
+        "tipo": "Manifold Submarino",
+        "quantidade": 2,
+        "profundidade": 1360,
+        "peso_unitario": 85,
+        "observacao": "Coleta de produção de múltiplos poços"
+      },
+      {
+        "tipo": "Árvore de Natal Molhada (ANM)",
+        "quantidade": 10,
+        "profundidade": 1360,
+        "peso_unitario": 45,
+        "observacao": "1 ANM por poço"
+      },
+      {
+        "tipo": "Sistema de Ancoragem",
+        "componentes": "12 linhas de ancoragem + 12 âncoras tipo STEVPRIS",
+        "peso_total": 2400,
+        "observacao": "Spread mooring system. Cada âncora pesa ~200 toneladas"
+      }
+    ]
+  },
+  "alternativas": [
+    {
+      "tecnica": "Remoção Total",
+      "descricao": "Desconexão completa do FPSO, remoção de todas as linhas, risers, manifolds e ANMs. Plugueamento e abandono de 10 poços conforme ANP 46. Remoção das 12 linhas de ancoragem e âncoras.",
+      "vantagens": "Restauração completa do leito marinho. Eliminação total de riscos ambientais. Conformidade máxima com regulamentações internacionais.",
+      "desvantagens": "Custo elevado (USD 285M). Prazo extenso (48 meses). Complexidade operacional alta.",
+      "custoEstimado": 285000000,
+      "prazo": 48
+    },
+    {
+      "tecnica": "Remoção Parcial",
+      "descricao": "Remoção do FPSO e equipamentos acima do leito marinho. Manutenção de estruturas submarinas com mais de 3m de profundidade (manifolds enterrados). Plugueamento de poços.",
+      "vantagens": "Custo 35% menor (USD 185M). Prazo reduzido (36 meses). Menor mobilização de recursos.",
+      "desvantagens": "Estruturas remanescentes no leito marinho. Requer monitoramento contínuo. Potencial impacto em navegação.",
+      "custoEstimado": 185000000,
+      "prazo": 36
+    },
+    {
+      "tecnica": "Conversão para Recife Artificial",
+      "descricao": "Limpeza e preparação do FPSO para afundamento controlado. Criação de recife artificial para desenvolvimento de fauna marinha. Manutenção de estruturas submarinas como habitat.",
+      "vantagens": "Custo significativamente menor (USD 95M). Benefício ambiental (biodiversidade). Prazo curto (18 meses).",
+      "desvantagens": "Não aprovado pela ANP 817/2020. Requer estudos ambientais extensivos. Incerteza regulatória. Responsabilidade perpétua.",
+      "custoEstimado": 95000000,
+      "prazo": 18,
+      "observacao": "NÃO RECOMENDADA - Não conforme com ANP 817/2020"
+    }
+  ],
+  "alternativa_selecionada": {
+    "tecnica": "Remoção Total",
+    "justificativa": "A Petrobras selecionou a alternativa de REMOÇÃO TOTAL com base nos seguintes critérios:\n\n**1. CONFORMIDADE REGULATÓRIA:**\n- 100% conforme ANP 817/2020\n- Alinhamento com práticas internacionais (OSPAR Decision 98/3)\n- Eliminação de passivos ambientais futuros\n\n**2. ANÁLISE MULTICRITÉRIO:**\n- Ambiental: 95/100 (maior pontuação)\n- Segurança: 98/100 (eliminação total de riscos)\n- Social: 85/100 (aceitação de stakeholders)\n- Técnico: 82/100 (tecnologia madura e comprovada)\n- Econômico: 72/100 (VPL positivo em análise de 30 anos)\n\n**3. GESTÃO DE RISCOS:**\n- Eliminação de 100% dos riscos de vazamento\n- Sem necessidade de monitoramento pós-desativação\n- Proteção da imagem corporativa\n\n**4. PRECEDENTES:**\n- Conforme desativações anteriores da Petrobras (Garoupa, Bicudo, Enchova)\n- Alinhamento com estratégia ESG da companhia\n- Compromisso com sustentabilidade de longo prazo\n\n**5. ANÁLISE ECONÔMICA:**\nApesar do custo inicial elevado (USD 285M), a análise de VPL considerando:\n- Custos evitados de monitoramento: USD 2M/ano × 30 anos = USD 60M\n- Mitigação de riscos ambientais: USD 150M (valor estimado de passivo)\n- Recuperação de materiais: USD 45M (venda de sucata do FPSO)\n- **VPL Líquido (Taxa 8%): USD +28M**\n\nA Remoção Total apresenta VPL positivo e elimina riscos perpétuos."
+  },
+  "projeto": {
+    "descricao": "PROJETO DE DESATIVAÇÃO - P-35 FPSO\n\n**FASE 1: PREPARAÇÃO E MOBILIZAÇÃO (6 meses)**\n- Contratação de PLSV (Pipe Laying Support Vessel)\n- Contratação de DSV (Diving Support Vessel)\n- Contratação de Sonda de Workover para P&A\n- Mobilização de ROVs (2× Work Class + 1× Observation)\n- Engineering detalhado e análise de riscos\n- Obtenção de licenças ambientais complementares\n\n**FASE 2: PLUGUEAMENTO E ABANDONO DE POÇOS (14 meses)**\n- P&A de 8 poços ativos conforme ANP Resolução 46/2016\n- Verificação de 2 poços já abandonados\n- Remoção de 10 Árvores de Natal Molhadas (ANMs)\n- Testes de integridade e certificação\n- Estimativa: 1.5 meses por poço (média)\n\n**FASE 3: DESCONEXÃO DE LINHAS E RISERS (8 meses)**\n- Desconexão de 8 risers flexíveis no FPSO\n- Recuperação de 8 risers (~13.6 km total)\n- Recuperação de 4 flowlines rígidos (~8.2 km)\n- Recuperação de 3 umbilicais (~5.1 km)\n- Corte e recuperação próximo ao leito marinho\n\n**FASE 4: REMOÇÃO DE EQUIPAMENTOS SUBMARINOS (6 meses)**\n- Remoção de 2 manifolds submarinos (170 ton total)\n- Remoção de equipamentos auxiliares\n- Limpeza do leito marinho\n- Survey final com ROV\n\n**FASE 5: REMOÇÃO DO SISTEMA DE ANCORAGEM (8 meses)**\n- Desconexão de 12 linhas de ancoragem\n- Recuperação de correntes e cabos (~45 km)\n- Recuperação de 12 âncoras STEVPRIS (2.400 ton total)\n- Operação complexa com AHTS (Anchor Handling Tug Supply)\n\n**FASE 6: REBOQUE DO FPSO (2 meses)**\n- Preparação para reboque (limpeza, certificações)\n- Reboque para estaleiro de desmantelamento\n- Destino: Estaleiro Jurong Aracruz (ES)\n- Distância: ~850 km\n\n**FASE 7: DESMANTELAMENTO DO FPSO (4 meses)**\n- Drenagem de todos os tanques\n- Remoção de materiais perigosos\n- Corte e separação de materiais (aço, cobre, alumínio)\n- Destinação de resíduos Classe I e II\n\n**RECURSOS PRINCIPAIS:**\n- 1× Sonda de Workover (P&A)\n- 1× PLSV (Pipe Laying Support Vessel)\n- 1× DSV (Diving Support Vessel)\n- 3× AHTS (Anchor Handling Tug Supply)\n- 2× ROV Work Class\n- 1× ROV Observation Class\n- 2× Supply Vessels\n- Equipe onshore: 45 pessoas\n- Equipe offshore: 180 pessoas (pico)",
+    "infraestrutura": "INFRAESTRUTURA NECESSÁRIA:\n\n**EMBARCAÇÕES PRINCIPAIS:**\n1. **Sonda de Workover:** Ensco DS-5\n   - Capacidade: 3.000m lâmina d'água\n   - Taxa diária: USD 180.000\n   - Período: 14 meses\n\n2. **PLSV:** Sapura 3000\n   - Guindaste: 400 ton\n   - ROV Work Class integrado\n   - Taxa diária: USD 220.000\n   - Período: 16 meses\n\n3. **DSV:** Skandi Santos\n   - Sistema de mergulho saturado (300m)\n   - ROV Work Class\n   - Taxa diária: USD 150.000\n   - Período: 8 meses\n\n4. **AHTS:** 3× rebocadores classe 22.000 BHP\n   - Para remoção de ancoragem\n   - Taxa diária: USD 45.000 cada\n   - Período: 8 meses\n\n**BASE ONSHORE:**\n- Base de Macaé (RJ) - existente\n- Heliporto para transporte de pessoal\n- Armazém para equipamentos (2.500 m²)\n- Escritório de projeto (500 m²)\n\n**ESTALEIRO DE DESMANTELAMENTO:**\n- Jurong Aracruz Estaleiro (ES)\n- Capacidade: FPSO até 350.000 DWT\n- Certificações: ISO 14001, ISO 30000 (Ship Recycling)\n- Área: 120.000 m²",
+    "destino": "DESTINAÇÃO FINAL DOS MATERIAIS:\n\n**FPSO P-35 (310.000 ton):**\n- Aço estrutural: 265.000 ton → Reciclagem (siderúrgicas)\n- Equipamentos: 35.000 ton → Revenda/Sucata\n- Resíduos Classe I: 2.500 ton → Incineração/Coprocessamento\n- Resíduos Classe II: 7.500 ton → Aterro industrial\n\n**EQUIPAMENTOS SUBMARINOS (3.100 ton):**\n- ANMs (10 unidades): Recondicionamento para revenda\n- Manifolds (2 unidades): Reciclagem de aço\n- Válvulas e atuadores: Revenda no mercado secundário\n\n**LINHAS E RISERS (8.500 ton):**\n- Risers flexíveis: Reciclagem de aço e polímeros\n- Flowlines rígidos: Reciclagem de aço\n- Umbilicais: Separação e reciclagem (cobre, aço, polímeros)\n\n**SISTEMA DE ANCORAGEM (2.400 ton):**\n- Âncoras STEVPRIS: Revenda para outras operações\n- Correntes e cabos: Reciclagem de aço\n\n**RECEITA ESTIMADA COM SUCATA:**\n- Aço: USD 350/ton × 270.000 ton = USD 94,5M\n- Equipamentos: USD 15M\n- Âncoras: USD 8M\n- Materiais nobres (cobre, bronze): USD 12M\n- **TOTAL RECEITA: USD 129,5M**\n\n**PARCEIROS DE RECICLAGEM:**\n- Gerdau (aço estrutural)\n- ArcelorMittal (chapas)\n- Metso (equipamentos)\n- Veolia (resíduos perigosos)"
+  },
+  "cronograma_detalhado": [
+    {
+      "fase": "Preparação e Mobilização",
+      "inicio": "Mês 0",
+      "duracao": 6,
+      "atividades": "Engineering, licenças, mobilização de embarcações, contratações"
+    },
+    {
+      "fase": "P&A de Poços",
+      "inicio": "Mês 6",
+      "duracao": 14,
+      "atividades": "Plugueamento de 8 poços + verificação de 2 abandonados + remoção de ANMs"
+    },
+    {
+      "fase": "Desconexão de Linhas",
+      "inicio": "Mês 20",
+      "duracao": 8,
+      "atividades": "Recuperação de risers, flowlines e umbilicais"
+    },
+    {
+      "fase": "Remoção Equipamentos Submarinos",
+      "inicio": "Mês 28",
+      "duracao": 6,
+      "atividades": "Remoção de manifolds e limpeza do leito marinho"
+    },
+    {
+      "fase": "Remoção Sistema de Ancoragem",
+      "inicio": "Mês 34",
+      "duracao": 8,
+      "atividades": "Desconexão e recuperação de 12 linhas + 12 âncoras"
+    },
+    {
+      "fase": "Reboque do FPSO",
+      "inicio": "Mês 42",
+      "duracao": 2,
+      "atividades": "Preparação e reboque para Jurong Aracruz (ES)"
+    },
+    {
+      "fase": "Desmantelamento",
+      "inicio": "Mês 44",
+      "duracao": 4,
+      "atividades": "Desmontagem, reciclagem e destinação de resíduos"
+    },
+    {
+      "fase": "Encerramento",
+      "inicio": "Mês 48",
+      "duracao": 1,
+      "atividades": "Relatórios finais, certificações e desmobilização"
+    }
+  ],
+  "custos_detalhados": {
+    "preparacao_mobilizacao": {
+      "engineering": 8500000,
+      "licencas_ambientais": 2800000,
+      "mobilizacao_embarcacoes": 12500000,
+      "seguros": 4200000,
+      "subtotal": 28000000
+    },
+    "pa_pocos": {
+      "sonda_workover": 75600000,
+      "materiais_cimento": 8400000,
+      "remocao_anms": 6500000,
+      "testes_certificacoes": 3200000,
+      "subtotal": 93700000
+    },
+    "remocao_linhas_risers": {
+      "plsv": 52800000,
+      "recuperacao_risers": 14200000,
+      "recuperacao_flowlines": 8600000,
+      "recuperacao_umbilicais": 4100000,
+      "subtotal": 79700000
+    },
+    "remocao_equipamentos_submarinos": {
+      "dsv": 36000000,
+      "rovs": 8200000,
+      "manifolds": 4800000,
+      "limpeza_leito": 3500000,
+      "subtotal": 52500000
+    },
+    "remocao_ancoragem": {
+      "ahts": 32400000,
+      "recuperacao_correntes": 6800000,
+      "recuperacao_ancoras": 9200000,
+      "subtotal": 48400000
+    },
+    "reboque_fpso": {
+      "preparacao": 4500000,
+      "rebocadores": 3200000,
+      "seguros_reboque": 2100000,
+      "subtotal": 9800000
+    },
+    "desmantelamento": {
+      "estaleiro": 18500000,
+      "gestao_residuos": 8200000,
+      "destinacao_classe_i": 4600000,
+      "certificacoes": 1200000,
+      "subtotal": 32500000
+    },
+    "gestao_projeto": {
+      "equipe_onshore": 15600000,
+      "consultoria": 8400000,
+      "contingencia": 42500000,
+      "subtotal": 66500000
+    },
+    "total": 411100000,
+    "receita_sucata": -129500000,
+    "custo_liquido": 281600000
+  },
+  "ml_predictions": {
+    "custo_previsto_ml": 285000000,
+    "duracao_prevista_ml": 48,
+    "probabilidade_aprovacao_anp": 0.95,
+    "tecnica_sugerida_ml": "Remoção Total",
+    "confianca_ml": 0.91,
+    "anomalias_detectadas": false
+  },
+  "analise_riscos": [
+    {
+      "risco": "Condições Meteorológicas Adversas",
+      "probabilidade": "Alta",
+      "impacto": "Médio",
+      "mitigacao": "Janelas operacionais definidas (Abr-Set). Forecast meteorológico contínuo. Contingência de 15% no prazo."
+    },
+    {
+      "risco": "Falha no Sistema de Ancoragem durante Remoção",
+      "probabilidade": "Média",
+      "impacto": "Alto",
+      "mitigacao": "Análise estrutural detalhada. Remoção sequencial. Sistema de backup com AHTS adicional."
+    },
+    {
+      "risco": "Vazamento durante Desmantelamento",
+      "probabilidade": "Baixa",
+      "impacto": "Alto",
+      "mitigacao": "Limpeza completa antes do reboque. Plano de Emergência Individual (PEI). Barreira de contenção."
+    },
+    {
+      "risco": "Atraso no P&A de Poços",
+      "probabilidade": "Média",
+      "impacto": "Alto",
+      "mitigacao": "Buffer de 20% no cronograma de P&A. Sonda de backup em standby. Equipe experiente."
+    },
+    {
+      "risco": "Indisponibilidade de Embarcações",
+      "probabilidade": "Média",
+      "impacto": "Médio",
+      "mitigacao": "Contratos long-term. Cláusulas de prioridade. Relação com múltiplos fornecedores."
+    }
+  ],
+  "licencas_ambientais": {
+    "lp": {
+      "numero": "LP-IBAMA-001245/2024",
+      "emissao": "2024-03-15",
+      "validade": "2026-03-15",
+      "condicoes": "Apresentação de Projeto Executivo detalhado e RCA (Relatório de Controle Ambiental)"
+    },
+    "li": {
+      "numero": "LI-IBAMA-002156/2024",
+      "emissao": "2024-08-22",
+      "validade": "2028-08-22",
+      "condicoes": "Monitoramento bimestral durante execução. Relatórios trimestrais ao IBAMA."
+    },
+    "lo": {
+      "numero": "N/A",
+      "observacao": "Não aplicável para operação de desativação"
+    },
+    "autorizacoes_complementares": [
+      "Autorização ANTAQ para reboque (ANTAQ-RBQ-445/2024)",
+      "Autorização Marinha do Brasil (DHN-2024-0892)",
+      "Licença INEA-RJ para operações na base de Macaé"
+    ]
+  },
+  "avaliacoes_criterios": {
+    "ambiental": {
+      "nota": 95,
+      "justificativa": "Remoção total elimina 100% dos riscos de vazamento futuro. Restauração completa do leito marinho. Recuperação de fauna e flora marinhas. Gestão adequada de resíduos com 85% de reciclagem. Conformidade com MARPOL e Convenção de Londres."
+    },
+    "social": {
+      "nota": 85,
+      "justificativa": "Geração de 450 empregos diretos durante 48 meses. Fomento à economia local (Macaé). Redução de empregos permanentes compensada por treinamento para novas atividades. Comunicação transparente com comunidades pesqueiras. Aceitação de 78% em pesquisa com stakeholders."
+    },
+    "tecnico": {
+      "nota": 82,
+      "justificativa": "Tecnologia madura e comprovada. Petrobras possui experiência em 12 desativações similares. Disponibilidade de embarcações especializadas no Brasil. Estaleiro certificado ISO 30000. Riscos técnicos mitigáveis. Prazo realista baseado em benchmarks."
+    },
+    "seguranca": {
+      "nota": 98,
+      "justificativa": "Eliminação total de riscos de colapso estrutural futuro. Proteção à navegação. Gestão rigorosa de SSO (meta zero acidentes). Plano de Emergência Individual robusto. Conformidade com NR-30 e NORMAM. Seguro de USD 150M para responsabilidade civil."
+    },
+    "economico": {
+      "nota": 72,
+      "justificativa": "Investimento de USD 285M com VPL positivo (+USD 28M em 30 anos). Receita de sucata: USD 129,5M. Eliminação de custos de monitoramento (USD 2M/ano). Proteção contra passivos ambientais futuros (valor estimado USD 150M). Alinhamento com estratégia ESG melhora rating de crédito."
+    },
+    "media_geral": 86.4
+  }
+}

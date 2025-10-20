@@ -1,0 +1,12 @@
+{
+  "num_pocos": 2,
+  "profundidade_media": 800,
+  "lamina_agua": 500,
+  "distancia_costa": 25,
+  "bacia": "Reconcavo",
+  "tipo_instalacao": "Poco",
+  "tecnica": "Descomissionamento Parcial",
+  "completude_pct": 85,
+  "num_riscos_altos": 2,
+  "complexidade": 1.5
+}

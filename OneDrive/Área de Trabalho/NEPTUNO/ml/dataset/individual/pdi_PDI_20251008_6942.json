@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_6942",
+  "timestamp": "2025-10-08T14:40:30.959099",
+  "bacia": "Bacia do Recôncavo",
+  "num_pocos": 8,
+  "profundidade_media": 941.73,
+  "lamina_agua": 54.67,
+  "distancia_costa": 178.25,
+  "tipo_instalacao": "fpso",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 788.05,
+  "custo_pa_usd": 74.16,
+  "custo_remocao_usd": 635.76,
+  "custo_mobilizacao_usd": 105.52,
+  "duracao_meses": 21,
+  "num_riscos_altos": 2,
+  "prob_aprovacao_anp": 0.799,
+  "completude_pct": 92.6,
+  "complexidade": 1.42,
+  "classe_profundidade": "raso",
+  "classe_lamina": "rasa",
+  "classe_distancia": "distante"
+}

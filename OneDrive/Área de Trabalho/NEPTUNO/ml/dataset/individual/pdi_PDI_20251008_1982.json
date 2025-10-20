@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_1982",
+  "timestamp": "2025-10-08T14:40:30.964029",
+  "bacia": "Bacia do Ceará",
+  "num_pocos": 9,
+  "profundidade_media": 1918.85,
+  "lamina_agua": 197.63,
+  "distancia_costa": 382.64,
+  "tipo_instalacao": "fpso",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 1009.57,
+  "custo_pa_usd": 136.22,
+  "custo_remocao_usd": 612.14,
+  "custo_mobilizacao_usd": 76.71,
+  "duracao_meses": 25,
+  "num_riscos_altos": 5,
+  "prob_aprovacao_anp": 0.797,
+  "completude_pct": 94.5,
+  "complexidade": 2.27,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "rasa",
+  "classe_distancia": "muitoDistante"
+}

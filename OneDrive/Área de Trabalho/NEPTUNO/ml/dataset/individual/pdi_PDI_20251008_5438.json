@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_5438",
+  "timestamp": "2025-10-08T14:40:30.942911",
+  "bacia": "Bacia do Ceará",
+  "num_pocos": 6,
+  "profundidade_media": 2573.77,
+  "lamina_agua": 992.46,
+  "distancia_costa": 102.55,
+  "tipo_instalacao": "arvore_natal",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 173.33,
+  "custo_pa_usd": 130.21,
+  "custo_remocao_usd": 2.97,
+  "custo_mobilizacao_usd": 19.36,
+  "duracao_meses": 15,
+  "num_riscos_altos": 6,
+  "prob_aprovacao_anp": 0.635,
+  "completude_pct": 84.9,
+  "complexidade": 1.44,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "media",
+  "classe_distancia": "media"
+}

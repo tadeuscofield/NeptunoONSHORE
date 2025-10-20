@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_7302",
+  "timestamp": "2025-10-08T14:40:30.955472",
+  "bacia": "Bacia Potiguar",
+  "num_pocos": 13,
+  "profundidade_media": 2192.63,
+  "lamina_agua": 885.18,
+  "distancia_costa": 99.04,
+  "tipo_instalacao": "fpso",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 965.73,
+  "custo_pa_usd": 312.58,
+  "custo_remocao_usd": 466.16,
+  "custo_mobilizacao_usd": 93.26,
+  "duracao_meses": 31,
+  "num_riscos_altos": 0,
+  "prob_aprovacao_anp": 0.838,
+  "completude_pct": 91.1,
+  "complexidade": 2.07,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "media",
+  "classe_distancia": "media"
+}

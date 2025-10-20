@@ -1,0 +1,12 @@
+{
+  "num_pocos": 1,
+  "profundidade_media": 100,
+  "lamina_agua": 50,
+  "distancia_costa": 5,
+  "bacia": "Campos",
+  "tipo_instalacao": "Poco",
+  "tecnica": "Descomissionamento Total",
+  "completude_pct": 45,
+  "num_riscos_altos": 15,
+  "complexidade": 1.0
+}

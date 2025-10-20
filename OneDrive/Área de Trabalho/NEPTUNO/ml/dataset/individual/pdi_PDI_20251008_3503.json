@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_3503",
+  "timestamp": "2025-10-08T14:40:30.936519",
+  "bacia": "Bacia de Sergipe-Alagoas",
+  "num_pocos": 5,
+  "profundidade_media": 3226.66,
+  "lamina_agua": 1124.9,
+  "distancia_costa": 318.2,
+  "tipo_instalacao": "arvore_natal",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 171.78,
+  "custo_pa_usd": 120.98,
+  "custo_remocao_usd": 3.44,
+  "custo_mobilizacao_usd": 17.99,
+  "duracao_meses": 11,
+  "num_riscos_altos": 2,
+  "prob_aprovacao_anp": 0.782,
+  "completude_pct": 86.4,
+  "complexidade": 2.12,
+  "classe_profundidade": "profundo",
+  "classe_lamina": "media",
+  "classe_distancia": "muitoDistante"
+}

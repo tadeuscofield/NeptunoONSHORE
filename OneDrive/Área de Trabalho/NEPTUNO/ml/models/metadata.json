@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-08T14:44:21.234740",
+  "n_samples": 500,
+  "models": {
+    "custo_predictor.pkl": {
+      "tipo": "Regressao",
+      "metrica": "Erro: \u00b122.7%",
+      "r2": "0.808"
+    },
+    "tecnica_classifier.pkl": {
+      "tipo": "Classificacao",
+      "metrica": "Acuracia: 42.00%",
+      "confianca": "50.42%"
+    },
+    "anomaly_detector.pkl": {
+      "tipo": "Deteccao",
+      "metrica": "Anomalias: 5.0%",
+      "normal": "95.0%"
+    },
+    "aprovacao_predictor.pkl": {
+      "tipo": "Classificacao",
+      "metrica": "Acuracia: 83.00%",
+      "prob_media": "40.62%"
+    },
+    "duracao_predictor.pkl": {
+      "tipo": "Regressao",
+      "metrica": "Erro: \u00b11.8 meses",
+      "r2": "0.896"
+    }
+  }
+}

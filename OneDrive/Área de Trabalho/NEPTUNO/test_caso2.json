@@ -1,0 +1,12 @@
+{
+  "num_pocos": 5,
+  "profundidade_media": 2500,
+  "lamina_agua": 1200,
+  "distancia_costa": 80,
+  "bacia": "Campos",
+  "tipo_instalacao": "Plataforma Fixa",
+  "tecnica": "Descomissionamento Total",
+  "completude_pct": 92,
+  "num_riscos_altos": 4,
+  "complexidade": 2.8
+}

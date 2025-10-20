@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_8216",
+  "timestamp": "2025-10-08T14:40:30.944949",
+  "bacia": "Bacia do Recôncavo",
+  "num_pocos": 12,
+  "profundidade_media": 1632.01,
+  "lamina_agua": 47.61,
+  "distancia_costa": 132.77,
+  "tipo_instalacao": "arvore_natal",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 217.97,
+  "custo_pa_usd": 174.38,
+  "custo_remocao_usd": 3.11,
+  "custo_mobilizacao_usd": 20.01,
+  "duracao_meses": 27,
+  "num_riscos_altos": 5,
+  "prob_aprovacao_anp": 0.725,
+  "completude_pct": 85.2,
+  "complexidade": 1.67,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "rasa",
+  "classe_distancia": "media"
+}

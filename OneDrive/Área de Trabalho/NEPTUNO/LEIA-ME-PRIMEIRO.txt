@@ -1,0 +1,162 @@
+========================================
+  🏭 NEPTUNO - SISTEMA PDI
+  Plano de Desativação de Instalações
+========================================
+
+✨ BEM-VINDO AO NEPTUNO!
+
+Este é um sistema profissional para elaboração de PDI
+conforme Resolução ANP 817/2020.
+
+
+⚠️ ATENÇÃO - LEIA ISTO PRIMEIRO!
+----------------------------------
+
+Para o sistema funcionar SEM ERROS, você PRECISA usar
+um servidor HTTP local.
+
+❌ NÃO FUNCIONA: Duplo clique em index.html
+✅ FUNCIONA: Usar SERVIDOR.bat
+
+Por quê? Navegadores bloqueiam arquivos JSX por segurança
+(política CORS). Servidor HTTP resolve isso!
+
+
+📂 ARQUIVOS DO SISTEMA:
+------------------------
+
+🟢 SERVIDOR.bat ← USE ESTE! (RECOMENDADO)
+   - Inicia servidor HTTP automaticamente
+   - Sistema funciona 100% sem erros
+
+📘 IMPORTANTE-LEIA.md
+   - Explicação detalhada do CORS
+   - Como resolver problemas
+
+📘 TUTORIAL.md
+   - Tutorial completo passo a passo
+   - Leia se for sua primeira vez
+
+📗 README.md
+   - Documentação geral do sistema
+   - Funcionalidades e recursos
+
+📊 CHECKLIST_STEPS.md
+   - Checklist de validação dos 8 steps
+
+📚 PDI_SISTEMA_COMPLETO.md
+   - Memória de cálculo detalhada
+
+🔬 PDI_ANALISE_TECNICA.md
+   - Arquitetura do sistema
+
+
+💻 ARQUIVOS TÉCNICOS (não mexer):
+----------------------------------
+- index.html (aplicação principal)
+- PDIComponent.jsx (interface)
+- PDICalculos.js (motor de cálculos)
+
+
+🚀 COMO COMEÇAR (MÉTODO CORRETO):
+----------------------------------
+
+1. Duplo clique em: SERVIDOR.bat
+
+2. Aguarde aparecer no terminal:
+   "Acesse: http://localhost:8080"
+
+3. Abra o navegador e vá para:
+   http://localhost:8080
+
+4. Use o sistema normalmente!
+
+5. Quando terminar:
+   - Volte no terminal
+   - Pressione Ctrl+C
+   - Confirme com S (Sim)
+
+
+⚡ INÍCIO RÁPIDO (3 passos):
+----------------------------
+
+1. SERVIDOR.bat (duplo clique)
+2. Abrir: http://localhost:8080
+3. Preencher e usar o sistema
+
+⚠️ NÃO use INICIAR.bat (gera erro CORS)
+✅ USE SERVIDOR.bat (funciona 100%)
+
+
+💡 DICAS IMPORTANTES:
+---------------------
+
+✅ Preencha SEMPRE:
+   - Profundidade da lâmina d'água (Step 1)
+   - Distância da costa (Step 1)
+   - Profundidade de TODOS os poços (Step 3)
+
+✅ Para melhor precisão:
+   - Escolha a bacia correta
+   - Informe peso real das instalações
+   - Cadastre todos os poços
+
+✅ Auto-save ativado:
+   - Seus dados são salvos automaticamente
+   - Pode fechar e continuar depois
+
+
+🎯 RESULTADO ESPERADO:
+----------------------
+
+Após preencher tudo:
+- Custo total estimado: R$ 150M - R$ 300M
+- Score de confiança: 75-90%
+- PDF profissional pronto para ANP
+- Tempo de preenchimento: 20-30 min
+
+
+📞 PRECISA DE AJUDA?
+--------------------
+
+1. Leia o IMPORTANTE-LEIA.md (CORS explicado)
+2. Leia o TUTORIAL.md (super completo!)
+3. Consulte o README.md
+4. Veja exemplos no CHECKLIST_STEPS.md
+
+
+🔒 PRIVACIDADE:
+---------------
+
+✅ 100% local (servidor HTTP roda na sua máquina)
+✅ Nada enviado para internet
+✅ Dados salvos apenas no seu navegador
+✅ Total privacidade e segurança
+
+
+🐛 PROBLEMAS COMUNS:
+--------------------
+
+Problema: Tela em branco, erro CORS
+Solução: Use SERVIDOR.bat ao invés de duplo clique
+
+Problema: "Python não reconhecido"
+Solução: Instale Python ou Node.js
+
+Problema: Porta 8080 em uso
+Solução: Feche outros servidores ou use porta diferente
+
+
+========================================
+
+   🚀 CLIQUE EM "SERVIDOR.bat" AGORA!
+
+   Depois abra: http://localhost:8080
+
+========================================
+
+NEPTUNO © 2025
+Versão 2.0.3 | Conforme ANP 817/2020
+Sistema Profissional de Plano de Desativação
+
+⚠️ Lembre-se: SERVIDOR.bat é obrigatório!

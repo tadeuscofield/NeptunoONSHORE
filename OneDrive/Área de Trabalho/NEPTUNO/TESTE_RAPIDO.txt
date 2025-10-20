@@ -1,0 +1,96 @@
+========================================
+  TESTE RÁPIDO - NEPTUNO
+========================================
+
+✅ CHECKLIST DE VERIFICAÇÃO (2 minutos)
+
+1. ABRIR O SISTEMA
+   □ Duplo clique em: INICIAR.bat
+   □ OU duplo clique em: index.html
+
+2. LOADING SCREEN (1-2 segundos)
+   □ Aparece 🏭
+   □ Texto: "NEPTUNO"
+   □ Subtítulo: "Sistema de Plano de Desativação..."
+   □ Spinner girando
+   □ Desaparece automaticamente
+
+3. TELA PRINCIPAL
+   □ Header aparece com:
+      - Logo 🏭
+      - Texto "NEPTUNO"
+      - Botão 🌙/☀️ (dark mode)
+
+   □ Navegação dos 8 steps aparece:
+      - [1] [2] [3] [4] [5] [6] [7] [8]
+
+   □ Formulário do Step 1 aparece
+
+4. TESTE BÁSICO
+   □ Digite algo no campo "Nome do Operador"
+   □ O texto aparece? → ✅ React funcionando
+
+   □ Clique no botão 🌙 (dark mode)
+   □ Cores inverteram? → ✅ Tailwind funcionando
+
+   □ Clique em "2" (Step 2)
+   □ Mudou de step? → ✅ Navegação funcionando
+
+5. TESTE DE CÁLCULO
+   □ Vá para Step 3
+   □ Clique em "+ Adicionar Poço"
+   □ Modal abre? → ✅ OK
+
+   □ Vá para Step 8
+   □ Clique em "🤖 Calcular Automaticamente"
+   □ Alerta aparece com valor? → ✅ PDICalculos funcionando!
+
+========================================
+
+🎯 RESULTADO ESPERADO:
+
+✅ Tudo funciona = Sistema OK!
+❌ Algo falhou = Ver CORRECOES_APLICADAS.md
+
+========================================
+
+⚡ TESTE SUPER RÁPIDO (30 segundos):
+
+1. Abrir index.html
+2. Esperar loading sumir
+3. Ver se aparece o header com 🏭
+4. Clicar no botão de dark mode
+
+Se funcionou = TUDO OK! ✅
+
+========================================
+
+🐛 SE DER ERRO:
+
+1. Pressione F12
+2. Vá na aba "Console"
+3. Veja as mensagens de erro
+4. Anote o erro
+5. Leia CORRECOES_APLICADAS.md
+
+========================================
+
+📞 COMANDOS DE DEBUG:
+
+Pressione F12 e cole no Console:
+
+console.log('React:', typeof React !== 'undefined' ? 'OK' : 'ERRO');
+console.log('PDICalculos:', typeof window.PDICalculos !== 'undefined' ? 'OK' : 'ERRO');
+
+Deve mostrar:
+React: OK
+PDICalculos: OK
+
+========================================
+
+✅ Sistema testado e funcionando!
+
+Data: 08/10/2025
+Versão: 2.0.1
+
+NEPTUNO © 2025

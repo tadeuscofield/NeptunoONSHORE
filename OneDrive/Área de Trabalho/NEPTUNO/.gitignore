@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Sistema
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporários
+*.tmp
+*.temp
+~$*
+
+# Backups
+backup/
+*_backup.*
+*.bak

@@ -1,0 +1,39 @@
+{
+  "referencia": {
+    "nomeOperador": "Petróleo Brasileiro S.A. - PETROBRAS",
+    "cnpj": "33.000.167/0001-01",
+    "numeroContrato": "ANP/SPG/007/2001",
+    "tipoPDI": "final",
+    "tipoInstalacao": "maritima",
+    "bacia": "Bacia de Campos",
+    "bloco": "BC-60",
+    "latitude": "-22.5847",
+    "longitude": "-40.1234",
+    "profundidade": "1360",
+    "distanciaCosta": "120",
+    "dataInicio": "2026-01-01",
+    "dataTermino": "2029-12-31",
+    "dataSubmissao": "2025-10-09"
+  },
+  "motivacoes": {
+    "tipo": "fim_producao",
+    "justificativa": "A plataforma P-35 atingiu o término de sua vida produtiva após 25 anos de operação na Bacia de Campos. A produção declinou para menos de 10% da capacidade nominal, tornando economicamente inviável a continuidade das operações.",
+    "condicoesAtuais": "Instalação offshore tipo FPSO com 50.000 toneladas, operando em lâmina d'água de 1.360m. Atualmente em estado de suspensão temporária, aguardando descomissionamento."
+  },
+  "inventario": {
+    "pocos": [
+      {"nome": "RJS-432", "tipo": "produtor", "profundidade": "4200", "status": "ativo"},
+      {"nome": "RJS-433", "tipo": "produtor", "profundidade": "4500", "status": "ativo"},
+      {"nome": "RJS-434", "tipo": "injetor", "profundidade": "3800", "status": "ativo"},
+      {"nome": "RJS-435", "tipo": "produtor", "profundidade": "4100", "status": "suspenso"},
+      {"nome": "RJS-436", "tipo": "produtor", "profundidade": "4300", "status": "ativo"}
+    ],
+    "instalacoes": [
+      {"nome": "FPSO P-35", "tipo": "fpso", "peso": "50000", "quantidade": "1"},
+      {"nome": "Manifolds Submarinos", "tipo": "manifold", "quantidade": "3"},
+      {"nome": "Árvores de Natal", "tipo": "arvore", "quantidade": "5"},
+      {"nome": "Dutos de Exportação", "tipo": "duto", "extensao": "15000"},
+      {"nome": "Umbilicais", "tipo": "umbilical", "extensao": "8000"}
+    ]
+  }
+}

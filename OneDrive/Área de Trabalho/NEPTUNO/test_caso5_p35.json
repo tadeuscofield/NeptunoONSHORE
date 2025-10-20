@@ -1,0 +1,12 @@
+{
+  "num_pocos": 12,
+  "profundidade_media": 3200,
+  "lamina_agua": 1360,
+  "distancia_costa": 120,
+  "bacia": "Campos",
+  "tipo_instalacao": "Plataforma Semi-submersivel",
+  "tecnica": "Descomissionamento Total",
+  "completude_pct": 95,
+  "num_riscos_altos": 5,
+  "complexidade": 3.5
+}

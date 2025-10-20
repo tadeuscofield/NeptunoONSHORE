@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_8019",
+  "timestamp": "2025-10-08T14:40:30.920338",
+  "bacia": "Bacia Potiguar",
+  "num_pocos": 8,
+  "profundidade_media": 3962.65,
+  "lamina_agua": 1101.54,
+  "distancia_costa": 315.13,
+  "tipo_instalacao": "dutos",
+  "tecnica_selecionada": "leave_in_place",
+  "custo_total_usd": 500.6,
+  "custo_pa_usd": 387.17,
+  "custo_remocao_usd": 10.9,
+  "custo_mobilizacao_usd": 44.33,
+  "duracao_meses": 10,
+  "num_riscos_altos": 6,
+  "prob_aprovacao_anp": 0.58,
+  "completude_pct": 84.5,
+  "complexidade": 2.4,
+  "classe_profundidade": "profundo",
+  "classe_lamina": "media",
+  "classe_distancia": "muitoDistante"
+}

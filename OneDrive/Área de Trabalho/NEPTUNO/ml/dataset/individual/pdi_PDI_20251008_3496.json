@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_3496",
+  "timestamp": "2025-10-08T14:40:30.939344",
+  "bacia": "Bacia de Campos",
+  "num_pocos": 6,
+  "profundidade_media": 2975.8,
+  "lamina_agua": 1861.56,
+  "distancia_costa": 155.69,
+  "tipo_instalacao": "dutos",
+  "tecnica_selecionada": "remocao_completa",
+  "custo_total_usd": 344.41,
+  "custo_pa_usd": 240.84,
+  "custo_remocao_usd": 9.75,
+  "custo_mobilizacao_usd": 32.31,
+  "duracao_meses": 14,
+  "num_riscos_altos": 12,
+  "prob_aprovacao_anp": 0.777,
+  "completude_pct": 87.1,
+  "complexidade": 2.05,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "profunda",
+  "classe_distancia": "distante"
+}

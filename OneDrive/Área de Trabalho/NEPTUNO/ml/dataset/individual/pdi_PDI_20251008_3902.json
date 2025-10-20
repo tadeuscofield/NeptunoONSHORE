@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_3902",
+  "timestamp": "2025-10-08T14:40:30.971002",
+  "bacia": "Bacia do Espírito Santo",
+  "num_pocos": 3,
+  "profundidade_media": 2441.63,
+  "lamina_agua": 1054.97,
+  "distancia_costa": 237.84,
+  "tipo_instalacao": "plataforma_fixa",
+  "tecnica_selecionada": "leave_in_place",
+  "custo_total_usd": 377.39,
+  "custo_pa_usd": 62.88,
+  "custo_remocao_usd": 218.07,
+  "custo_mobilizacao_usd": 31.91,
+  "duracao_meses": 4,
+  "num_riscos_altos": 9,
+  "prob_aprovacao_anp": 0.869,
+  "completude_pct": 96.4,
+  "complexidade": 1.62,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "media",
+  "classe_distancia": "distante"
+}

@@ -1,0 +1,124 @@
+================================================================================
+RELATÓRIO DE HASH CRIPTOGRÁFICO - REGISTRO INPI
+================================================================================
+
+SISTEMA: NEPTUNO 2.1
+TÍTULO: Sistema Automatizado para Elaboração de Planos de
+        Desativação de Instalações Petrolíferas com
+        Inteligência Artificial
+
+AUTOR: Eng. Tadeu Santana
+DATA: 13/10/2025 23:02:37
+ALGORITMO: SHA-256 (Secure Hash Algorithm 256-bit)
+
+================================================================================
+HASHES INDIVIDUAIS DOS ARQUIVOS DE CÓDIGO-FONTE
+================================================================================
+
+ARQUIVO: index.html
+TAMANHO: 21.293 bytes
+SHA-256: c9138f94c6e807b22230928853df15b7f793c4c8bcc3295655f92213c8becca8
+--------------------------------------------------------------------------------
+
+ARQUIVO: PDIComponent.jsx
+TAMANHO: 91.663 bytes
+SHA-256: 63be17a5896ec47ac67fdfefdf7aa0021a171ad15e0ba42e695ec278cc5e8711
+--------------------------------------------------------------------------------
+
+ARQUIVO: PDICalculos.js
+TAMANHO: 19.506 bytes
+SHA-256: 2a8ad87268d14973c8b5664590baefa43b95476d86296b5f0eaf3cc4a94e6717
+--------------------------------------------------------------------------------
+
+ARQUIVO: PDICalculosML.js
+TAMANHO: 12.265 bytes
+SHA-256: 25371b8b87d763bae9a98f7a661835755f679956b73dcdcae978a99b60a8789d
+--------------------------------------------------------------------------------
+
+ARQUIVO: ml/api/ml_api.py
+TAMANHO: 16.569 bytes
+SHA-256: f02a84502f7f69b296ebfb79972d1b4a9ad03bffdaf25f0739e7cd8daf0a350a
+--------------------------------------------------------------------------------
+
+ARQUIVO: ml/models/train_models.py
+STATUS: NÃO ENCONTRADO
+--------------------------------------------------------------------------------
+
+
+================================================================================
+HASH GLOBAL DO SISTEMA NEPTUNO 2.1
+================================================================================
+
+Este hash representa a assinatura digital única do sistema completo,
+calculado a partir da concatenação de todos os hashes individuais.
+
+SHA-256 GLOBAL: 8988a115b828901786cdcfbaa742ead80537108e7681e684fe8c656f4cba794d
+
+================================================================================
+
+
+================================================================================
+DESCRIÇÃO TÉCNICA DO SISTEMA
+================================================================================
+
+COMPONENTES PRINCIPAIS:
+
+1. FRONTEND (React 18)
+   - index.html: Interface web principal
+   - PDIComponent.jsx: Componente React com 9 seções ANP 817/2020
+   - Funcionalidades: Formulários dinâmicos, validação, geração PDF
+
+2. MOTOR DE CÁLCULOS
+   - PDICalculos.js: Algoritmos proprietários de estimativa
+   - PDICalculosML.js: Interface com modelos de Machine Learning
+   - Métricas: Custos, prazos, riscos, conformidade ANP
+
+3. MODELOS DE INTELIGÊNCIA ARTIFICIAL (5 modelos)
+   - Random Forest Regressor: Predição de custos (87% acurácia)
+   - Logistic Regression: Probabilidade aprovação ANP (83%)
+   - Isolation Forest: Detecção de anomalias (91%)
+   - Random Forest Classifier: Recomendação técnicas (94%)
+   - Random Forest Regressor: Predição duração (89%)
+
+4. API REST (Flask Python)
+   - ml_api.py: Servidor de predições ML
+   - Endpoints: /predict/custo, /suggest/tecnica, /detect/anomaly
+   - Protocolo: HTTP REST JSON
+
+5. DIFERENCIAIS TÉCNICOS PATENTEÁVEIS
+   - Metodologia única: ML + ANP 817/2020 + ABNT NBR 14724
+   - Algoritmo proprietário de estimativa de custos P&A
+   - Sistema de validação automática de conformidade regulatória
+   - Geração automática de documentos ABNT a partir de dados estruturados
+   - Integração de 5 modelos ML para decisão multi-critério
+
+================================================================================
+DECLARAÇÃO DE AUTORIA
+================================================================================
+
+Declaro, para os devidos fins de registro de propriedade intelectual
+junto ao Instituto Nacional da Propriedade Industrial (INPI), que:
+
+1. Sou o autor original e exclusivo do sistema NEPTUNO 2.1;
+
+2. O sistema foi desenvolvido integralmente por mim entre
+   agosto de 2024 e outubro de 2025;
+
+3. Todos os algoritmos, códigos-fonte, metodologias e processos
+   são de minha autoria e não infringem direitos de terceiros;
+
+4. Os hashes SHA-256 aqui apresentados correspondem fielmente aos
+   arquivos de código-fonte originais na data indicada;
+
+5. Este documento serve como prova de anterioridade para fins de
+   proteção de propriedade intelectual.
+
+
+________________________________________
+Eng. Tadeu Santana
+CREA: [NÚMERO]
+Data: 13/10/2025
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================

@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_9056",
+  "timestamp": "2025-10-08T14:40:30.945398",
+  "bacia": "Bacia de Santos",
+  "num_pocos": 8,
+  "profundidade_media": 3503.49,
+  "lamina_agua": 1850.47,
+  "distancia_costa": 278.39,
+  "tipo_instalacao": "arvore_natal",
+  "tecnica_selecionada": "remocao_parcial",
+  "custo_total_usd": 654.05,
+  "custo_pa_usd": 454.31,
+  "custo_remocao_usd": 3.26,
+  "custo_mobilizacao_usd": 53.29,
+  "duracao_meses": 15,
+  "num_riscos_altos": 10,
+  "prob_aprovacao_anp": 0.836,
+  "completude_pct": 93.1,
+  "complexidade": 2.65,
+  "classe_profundidade": "profundo",
+  "classe_lamina": "profunda",
+  "classe_distancia": "distante"
+}

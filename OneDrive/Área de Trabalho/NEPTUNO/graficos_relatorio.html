@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos do Relatório PDI</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            background: white;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            page-break-after: always;
+        }
+        h2 {
+            text-align: center;
+            font-size: 14pt;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        canvas {
+            background: white;
+        }
+        @media print {
+            .chart-container {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- GRÁFICO 1: Distribuição de Custos -->
+<div class="chart-container">
+    <h2>Gráfico 1 - Distribuição de Custos por Categoria</h2>
+    <canvas id="chartCustos"></canvas>
+</div>
+
+<!-- GRÁFICO 2: Comparação ML vs Parametrico -->
+<div class="chart-container">
+    <h2>Gráfico 2 - Comparação: Machine Learning vs Cálculo Paramétrico</h2>
+    <canvas id="chartComparacao"></canvas>
+</div>
+
+<!-- GRÁFICO 3: Cronograma Gantt -->
+<div class="chart-container">
+    <h2>Gráfico 3 - Cronograma de Execução (Gantt)</h2>
+    <canvas id="chartGantt"></canvas>
+</div>
+
+<!-- GRÁFICO 4: Matriz de Risco -->
+<div class="chart-container">
+    <h2>Gráfico 4 - Matriz de Risco (Probabilidade × Impacto)</h2>
+    <canvas id="chartRisco"></canvas>
+</div>
+
+<!-- GRÁFICO 5: Critérios de Avaliação -->
+<div class="chart-container">
+    <h2>Gráfico 5 - Critérios de Avaliação de Alternativas</h2>
+    <canvas id="chartCriterios"></canvas>
+</div>
+
+<script>
+// GRÁFICO 1: Pizza - Distribuição de Custos
+const ctxCustos = document.getElementById('chartCustos').getContext('2d');
+new Chart(ctxCustos, {
+    type: 'doughnut',
+    data: {
+        labels: [
+            'Preparação (15%)',
+            'Plugueamento (25%)',
+            'Remoção Estruturas (35%)',
+            'Descarte/Reciclagem (15%)',
+            'Contingência (10%)'
+        ],
+        datasets: [{
+            data: [15, 25, 35, 15, 10],
+            backgroundColor: [
+                '#2E86AB',
+                '#A23B72',
+                '#F18F01',
+                '#C73E1D',
+                '#6A994E'
+            ],
+            borderWidth: 2,
+            borderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    font: { size: 12, family: 'Times New Roman' },
+                    padding: 15
+                }
+            },
+            title: {
+                display: false
+            }
+        }
+    }
+});
+
+// GRÁFICO 2: Barras - ML vs Parametrico
+const ctxComparacao = document.getElementById('chartComparacao').getContext('2d');
+new Chart(ctxComparacao, {
+    type: 'bar',
+    data: {
+        labels: ['Precisão Custo', 'Precisão Prazo', 'Tempo de Análise', 'Aprovação ANP'],
+        datasets: [
+            {
+                label: 'Cálculo Paramétrico',
+                data: [60, 30, 120, 65],
+                backgroundColor: '#C73E1D',
+                borderWidth: 1
+            },
+            {
+                label: 'Machine Learning',
+                data: [77, 70, 50, 83],
+                backgroundColor: '#2E86AB',
+                borderWidth: 1
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: { font: { size: 12, family: 'Times New Roman' } }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 100,
+                ticks: {
+                    callback: function(value) {
+                        if (this.getLabelForValue(value) === 'Tempo de Análise') {
+                            return value + ' min';
+                        }
+                        return value + '%';
+                    },
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            },
+            x: {
+                ticks: {
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            }
+        }
+    }
+});
+
+// GRÁFICO 3: Gantt Simplificado (Barras Horizontais)
+const ctxGantt = document.getElementById('chartGantt').getContext('2d');
+new Chart(ctxGantt, {
+    type: 'bar',
+    data: {
+        labels: [
+            'Mobilização',
+            'Preparação',
+            'Plugueamento Poços',
+            'Remoção Linhas',
+            'Remoção Estruturas',
+            'Descarte',
+            'Desmobilização'
+        ],
+        datasets: [{
+            label: 'Duração (meses)',
+            data: [2, 3, 8, 6, 10, 4, 2],
+            backgroundColor: [
+                '#2E86AB',
+                '#A23B72',
+                '#F18F01',
+                '#C73E1D',
+                '#6A994E',
+                '#0077B6',
+                '#90BE6D'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+            legend: { display: false }
+        },
+        scales: {
+            x: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Duração (meses)',
+                    font: { size: 12, family: 'Times New Roman' }
+                },
+                ticks: {
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            },
+            y: {
+                ticks: {
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            }
+        }
+    }
+});
+
+// GRÁFICO 4: Scatter - Matriz de Risco
+const ctxRisco = document.getElementById('chartRisco').getContext('2d');
+new Chart(ctxRisco, {
+    type: 'scatter',
+    data: {
+        datasets: [
+            {
+                label: 'Risco Baixo',
+                data: [
+                    { x: 2, y: 2, r: 15 },
+                    { x: 1, y: 3, r: 12 }
+                ],
+                backgroundColor: '#6A994E'
+            },
+            {
+                label: 'Risco Médio',
+                data: [
+                    { x: 3, y: 3, r: 18 },
+                    { x: 2, y: 4, r: 16 }
+                ],
+                backgroundColor: '#F18F01'
+            },
+            {
+                label: 'Risco Alto',
+                data: [
+                    { x: 4, y: 4, r: 20 },
+                    { x: 5, y: 5, r: 22 }
+                ],
+                backgroundColor: '#C73E1D'
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: { font: { size: 12, family: 'Times New Roman' } }
+            }
+        },
+        scales: {
+            x: {
+                min: 0,
+                max: 6,
+                title: {
+                    display: true,
+                    text: 'PROBABILIDADE',
+                    font: { size: 12, family: 'Times New Roman', weight: 'bold' }
+                },
+                ticks: {
+                    stepSize: 1,
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            },
+            y: {
+                min: 0,
+                max: 6,
+                title: {
+                    display: true,
+                    text: 'IMPACTO',
+                    font: { size: 12, family: 'Times New Roman', weight: 'bold' }
+                },
+                ticks: {
+                    stepSize: 1,
+                    font: { size: 11, family: 'Times New Roman' }
+                }
+            }
+        }
+    }
+});
+
+// GRÁFICO 5: Radar - Critérios de Avaliação
+const ctxCriterios = document.getElementById('chartCriterios').getContext('2d');
+new Chart(ctxCriterios, {
+    type: 'radar',
+    data: {
+        labels: [
+            'Ambiental',
+            'Social',
+            'Técnico',
+            'Segurança',
+            'Econômico'
+        ],
+        datasets: [
+            {
+                label: 'Remoção Total',
+                data: [85, 90, 80, 95, 70],
+                borderColor: '#2E86AB',
+                backgroundColor: 'rgba(46, 134, 171, 0.2)',
+                borderWidth: 2
+            },
+            {
+                label: 'Remoção Parcial',
+                data: [70, 75, 85, 80, 85],
+                borderColor: '#F18F01',
+                backgroundColor: 'rgba(241, 143, 1, 0.2)',
+                borderWidth: 2
+            },
+            {
+                label: 'Desativação no Local',
+                data: [60, 65, 90, 70, 95],
+                borderColor: '#6A994E',
+                backgroundColor: 'rgba(106, 153, 78, 0.2)',
+                borderWidth: 2
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    font: { size: 12, family: 'Times New Roman' },
+                    padding: 15
+                }
+            }
+        },
+        scales: {
+            r: {
+                min: 0,
+                max: 100,
+                ticks: {
+                    stepSize: 20,
+                    font: { size: 10, family: 'Times New Roman' }
+                },
+                pointLabels: {
+                    font: { size: 12, family: 'Times New Roman', weight: 'bold' }
+                }
+            }
+        }
+    }
+});
+
+// Função para imprimir os gráficos
+function imprimirGraficos() {
+    window.print();
+}
+
+// Adicionar botão de impressão
+document.addEventListener('DOMContentLoaded', function() {
+    const btnImprimir = document.createElement('button');
+    btnImprimir.textContent = 'Imprimir Gráficos';
+    btnImprimir.style.cssText = 'position: fixed; top: 10px; right: 10px; padding: 10px 20px; background: #2E86AB; color: white; border: none; cursor: pointer; border-radius: 5px; font-size: 14px; z-index: 1000;';
+    btnImprimir.onclick = imprimirGraficos;
+    document.body.appendChild(btnImprimir);
+});
+</script>
+
+</body>
+</html>

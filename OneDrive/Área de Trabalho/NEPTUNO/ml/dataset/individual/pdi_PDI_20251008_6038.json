@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_6038",
+  "timestamp": "2025-10-08T14:40:30.922075",
+  "bacia": "Bacia de Santos",
+  "num_pocos": 8,
+  "profundidade_media": 3780.16,
+  "lamina_agua": 2250.55,
+  "distancia_costa": 352.8,
+  "tipo_instalacao": "manifold",
+  "tecnica_selecionada": "leave_in_place",
+  "custo_total_usd": 619.05,
+  "custo_pa_usd": 411.44,
+  "custo_remocao_usd": 12.2,
+  "custo_mobilizacao_usd": 53.09,
+  "duracao_meses": 13,
+  "num_riscos_altos": 3,
+  "prob_aprovacao_anp": 0.893,
+  "completude_pct": 99.3,
+  "complexidade": 3.1,
+  "classe_profundidade": "profundo",
+  "classe_lamina": "profunda",
+  "classe_distancia": "muitoDistante"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "PDI_20251008_3535",
+  "timestamp": "2025-10-08T14:40:30.964621",
+  "bacia": "Bacia do Solimões",
+  "num_pocos": 4,
+  "profundidade_media": 1520.59,
+  "lamina_agua": 138.44,
+  "distancia_costa": 317.21,
+  "tipo_instalacao": "fpso",
+  "tecnica_selecionada": "rigs_to_reefs",
+  "custo_total_usd": 757.36,
+  "custo_pa_usd": 57.45,
+  "custo_remocao_usd": 442.45,
+  "custo_mobilizacao_usd": 61.81,
+  "duracao_meses": 6,
+  "num_riscos_altos": 5,
+  "prob_aprovacao_anp": 0.81,
+  "completude_pct": 94.4,
+  "complexidade": 1.53,
+  "classe_profundidade": "intermediario",
+  "classe_lamina": "rasa",
+  "classe_distancia": "muitoDistante"
+}

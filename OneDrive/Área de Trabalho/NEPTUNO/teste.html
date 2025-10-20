@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste NEPTUNO</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .status {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .success { background: #d4edda; color: #155724; }
+    .error { background: #f8d7da; color: #721c24; }
+    .info { background: #d1ecf1; color: #0c5460; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    console.log('1. HTML carregado');
+    console.log('2. React disponível?', typeof React !== 'undefined');
+    console.log('3. ReactDOM disponível?', typeof ReactDOM !== 'undefined');
+  </script>
+
+  <script src="./PDICalculos.js"></script>
+
+  <script>
+    console.log('4. PDICalculos carregado?', typeof window.PDICalculos !== 'undefined');
+    if (window.PDICalculos) {
+      console.log('5. Funções disponíveis:', Object.keys(window.PDICalculos));
+    }
+  </script>
+
+  <script type="text/babel">
+    console.log('6. Babel processando JSX...');
+
+    const { useState } = React;
+
+    function TestApp() {
+      const [count, setCount] = useState(0);
+
+      return (
+        <div className="container">
+          <h1>🏭 Teste NEPTUNO</h1>
+
+          <div className="status success">
+            ✅ React carregado com sucesso!
+          </div>
+
+          <div className="status success">
+            ✅ ReactDOM carregado com sucesso!
+          </div>
+
+          <div className={window.PDICalculos ? "status success" : "status error"}>
+            {window.PDICalculos ? '✅ PDICalculos carregado!' : '❌ PDICalculos NÃO carregado!'}
+          </div>
+
+          {window.PDICalculos && (
+            <div className="status info">
+              📊 Funções disponíveis: {Object.keys(window.PDICalculos).join(', ')}
+            </div>
+          )}
+
+          <div className="status info">
+            🔢 Contador de teste: {count}
+            <button
+              onClick={() => setCount(count + 1)}
+              style={{marginLeft: '10px', padding: '5px 10px', cursor: 'pointer'}}
+            >
+              +1
+            </button>
+          </div>
+
+          <hr style={{margin: '30px 0'}} />
+
+          <h2>Status dos Componentes:</h2>
+          <ul>
+            <li>✅ HTML renderizado</li>
+            <li>✅ React hooks funcionando (useState)</li>
+            <li>✅ Babel transformando JSX</li>
+            <li>✅ Eventos onClick funcionando</li>
+          </ul>
+
+          <p style={{marginTop: '30px', color: '#666', fontSize: '14px'}}>
+            Se você está vendo esta mensagem, o sistema está funcionando!
+          </p>
+        </div>
+      );
+    }
+
+    console.log('7. Tentando renderizar...');
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<TestApp />);
+    console.log('8. Render concluído!');
+  </script>
+</body>
+</html>

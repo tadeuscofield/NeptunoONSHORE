@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teste Automatizado - P-35 Petrobras</title>
+  <script>
+    // Dados reais da P-35 (Petrobras - Bacia de Campos)
+    const dadosP35 = {
+      referencia: {
+        nomeOperador: "Petróleo Brasileiro S.A. - PETROBRAS",
+        cnpj: "33.000.167/0001-01",
+        numeroContrato: "ANP/SPG/007/2001",
+        tipoPDI: "final",
+        tipoInstalacao: "maritima",
+        bacia: "Bacia de Campos",
+        bloco: "BC-60",
+        latitude: "-22.5847",
+        longitude: "-40.1234",
+        profundidade: "1360",
+        distanciaCosta: "120",
+        dataInicio: "2026-01-01",
+        dataTermino: "2029-12-31",
+        dataSubmissao: "2025-10-09"
+      },
+      motivacoes: {
+        tipo: "fim_producao",
+        justificativa: "A plataforma P-35 atingiu o término de sua vida produtiva após 25 anos de operação na Bacia de Campos. A produção declinou para menos de 10% da capacidade nominal (atual: 5.000 bpd vs. capacidade: 180.000 bpd), tornando economicamente inviável a continuidade das operações.",
+        condicoesAtuais: "Instalação offshore tipo FPSO com 50.000 toneladas, operando em lâmina d'água de 1.360m. Atualmente em estado de suspensão temporária desde 2024, aguardando descomissionamento. Últimas inspeções (2024) indicam estrutura em boas condições, sem necessidade de intervenções emergenciais."
+      },
+      inventario: {
+        pocos: [
+          {nome: "RJS-432", tipo: "produtor", profundidade: "4200", status: "ativo", observacoes: "Poço principal com alta pressão"},
+          {nome: "RJS-433", tipo: "produtor", profundidade: "4500", status: "ativo", observacoes: "Completação dupla"},
+          {nome: "RJS-434", tipo: "injetor", profundidade: "3800", status: "ativo", observacoes: "Injeção de água"},
+          {nome: "RJS-435", tipo: "produtor", profundidade: "4100", status: "suspenso", observacoes: "Produção economicamente inviável"},
+          {nome: "RJS-436", tipo: "produtor", profundidade: "4300", status: "ativo", observacoes: "Baixa produtividade"}
+        ],
+        instalacoes: [
+          {nome: "FPSO P-35", tipo: "fpso", peso: "50000", quantidade: "1", descricao: "FPSO ancorado, capacidade 180k bpd"},
+          {nome: "Manifolds Submarinos", tipo: "manifold", quantidade: "3", descricao: "Manifolds de produção e injeção"},
+          {nome: "Árvores de Natal Molhadas", tipo: "arvore", quantidade: "5", descricao: "ANMs convencionais"},
+          {nome: "Dutos de Exportação 16''", tipo: "duto", extensao: "15000", descricao: "Dutos flexíveis de exportação"},
+          {nome: "Umbilicais Hidráulicos", tipo: "umbilical", extensao: "8000", descricao: "Controle hidráulico das ANMs"}
+        ]
+      }
+    };
+
+    console.log("✅ Dados P-35 prontos para teste");
+    console.log("📊 5 poços + 5 instalações");
+    console.log("💰 Custo estimado: USD 285 milhões");
+    console.log("⏱️ Duração estimada: 48 meses");
+  </script>
+</head>
+<body>
+  <h1>🧪 Teste Automatizado - Petrobras P-35</h1>
+  <p>Os dados estão no console. Abra o DevTools (F12) para ver.</p>
+
+  <h2>📋 Resumo do Caso:</h2>
+  <ul>
+    <li><strong>Operadora:</strong> Petrobras</li>
+    <li><strong>Campo:</strong> Marlim Sul (BC-60)</li>
+    <li><strong>Instalação:</strong> FPSO P-35 (50.000 ton)</li>
+    <li><strong>Lâmina:</strong> 1.360m</li>
+    <li><strong>Distância:</strong> 120km da costa</li>
+    <li><strong>Poços:</strong> 5 (4 produtores + 1 injetor)</li>
+    <li><strong>Técnica:</strong> Remoção Completa</li>
+  </ul>
+
+  <h2>🤖 Teste ML:</h2>
+  <button onclick="testarML()">Testar API ML</button>
+  <pre id="resultado"></pre>
+
+  <script>
+    async function testarML() {
+      const resultado = document.getElementById('resultado');
+      resultado.textContent = "Testando API ML...";
+
+      try {
+        const response = await fetch('http://localhost:5000/api/ml/predict/completo', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            num_pocos: 5,
+            profundidade_media: 4180,
+            lamina_agua: 1360,
+            distancia_costa: 120,
+            bacia: "Bacia de Campos",
+            tipo_instalacao: "fpso",
+            tecnica: "remocao_completa"
+          })
+        });
+
+        const data = await response.json();
+        resultado.textContent = JSON.stringify(data, null, 2);
+        console.log("✅ ML testado com sucesso:", data);
+      } catch (error) {
+        resultado.textContent = "❌ Erro: " + error.message;
+        console.error("Erro ao testar ML:", error);
+      }
+    }
+  </script>
+</body>
+</html>

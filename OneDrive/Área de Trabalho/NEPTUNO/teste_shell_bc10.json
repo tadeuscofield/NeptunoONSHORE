@@ -1,0 +1,46 @@
+{
+  "caso": "Shell Brasil - BC-10 (Campo de Bijupirá e Salema)",
+  "referencia": {
+    "nomeOperador": "Shell Brasil Petróleo Ltda.",
+    "cnpj": "02.896.869/0001-08",
+    "numeroContrato": "ANP/SPG/012/1998",
+    "tipoPDI": "final",
+    "tipoInstalacao": "maritima",
+    "bacia": "Bacia de Campos",
+    "bloco": "BC-10",
+    "latitude": "-22.9234",
+    "longitude": "-39.8765",
+    "profundidade": "850",
+    "distanciaCosta": "80",
+    "dataInicio": "2027-01-01",
+    "dataTermino": "2030-06-30",
+    "dataSubmissao": "2025-10-09"
+  },
+  "motivacoes": {
+    "tipo": "fim_contrato",
+    "justificativa": "Término do período de concessão do contrato BC-10, assinado em 1998. Após 29 anos de operação, o campo de Bijupirá e Salema está em fase de declínio avançado com produção residual de 3.000 bpd (capacidade original: 40.000 bpd).",
+    "condicoesAtuais": "Plataforma fixa tipo jaqueta (15.000 ton) instalada em lâmina d'água de 850m. Sistema de produção early production (primeira produção em águas profundas do Brasil - 1998). Estrutura em bom estado, com manutenção regular até 2024."
+  },
+  "inventario": {
+    "pocos": [
+      {"nome": "1-SPS-6D", "tipo": "produtor", "profundidade": "3200", "status": "ativo"},
+      {"nome": "1-SPS-7", "tipo": "produtor", "profundidade": "3400", "status": "ativo"},
+      {"nome": "3-SPS-10", "tipo": "produtor", "profundidade": "3100", "status": "suspenso"},
+      {"nome": "7-BIP-1D", "tipo": "produtor", "profundidade": "2900", "status": "ativo"}
+    ],
+    "instalacoes": [
+      {"nome": "Plataforma SS-11", "tipo": "plataforma", "peso": "15000", "quantidade": "1"},
+      {"nome": "Manifolds BC-10", "tipo": "manifold", "quantidade": "2"},
+      {"nome": "Árvores de Natal", "tipo": "arvore", "quantidade": "4"},
+      {"nome": "Flowlines 10''", "tipo": "duto", "extensao": "8000"},
+      {"nome": "Umbilicais", "tipo": "umbilical", "extensao": "5000"}
+    ]
+  },
+  "estimativas": {
+    "custo_total_usd": "125000000",
+    "duracao_meses": "36",
+    "tecnica_recomendada": "remocao_completa",
+    "chance_aprovacao_anp": "92%",
+    "observacoes": "Caso histórico: primeiro campo em águas profundas do Brasil"
+  }
+}

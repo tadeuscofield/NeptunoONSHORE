@@ -1,0 +1,33 @@
+{
+  "sistema": "NEPTUNO 2.1",
+  "autor": "Eng. Tadeu Santana",
+  "data_geracao": "2025-10-13T23:02:37.833503",
+  "hash_global": "8988a115b828901786cdcfbaa742ead80537108e7681e684fe8c656f4cba794d",
+  "arquivos": [
+    {
+      "nome": "index.html",
+      "tamanho": 21293,
+      "sha256": "c9138f94c6e807b22230928853df15b7f793c4c8bcc3295655f92213c8becca8"
+    },
+    {
+      "nome": "PDIComponent.jsx",
+      "tamanho": 91663,
+      "sha256": "63be17a5896ec47ac67fdfefdf7aa0021a171ad15e0ba42e695ec278cc5e8711"
+    },
+    {
+      "nome": "PDICalculos.js",
+      "tamanho": 19506,
+      "sha256": "2a8ad87268d14973c8b5664590baefa43b95476d86296b5f0eaf3cc4a94e6717"
+    },
+    {
+      "nome": "PDICalculosML.js",
+      "tamanho": 12265,
+      "sha256": "25371b8b87d763bae9a98f7a661835755f679956b73dcdcae978a99b60a8789d"
+    },
+    {
+      "nome": "ml/api/ml_api.py",
+      "tamanho": 16569,
+      "sha256": "f02a84502f7f69b296ebfb79972d1b4a9ad03bffdaf25f0739e7cd8daf0a350a"
+    }
+  ]
+}
