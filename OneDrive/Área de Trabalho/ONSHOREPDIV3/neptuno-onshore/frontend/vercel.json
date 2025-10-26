@@ -4,6 +4,11 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
+  "env": {
+    "VITE_API_URL": "https://backend-8r5oihcm1-tadeu-santanas-projects-bff2e2e9.vercel.app/api",
+    "VITE_APP_NAME": "NEPTUNO ONSHORE",
+    "VITE_APP_VERSION": "2.1.1"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
