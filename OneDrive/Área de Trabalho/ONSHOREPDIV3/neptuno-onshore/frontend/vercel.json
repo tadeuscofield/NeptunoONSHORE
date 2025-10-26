@@ -5,7 +5,7 @@
   "installCommand": "npm install",
   "framework": "vite",
   "env": {
-    "VITE_API_URL": "https://backend-fd1tpx3bz-tadeu-santanas-projects-bff2e2e9.vercel.app/api",
+    "VITE_API_URL": "https://backend-nj269st4z-tadeu-santanas-projects-bff2e2e9.vercel.app/api",
     "VITE_APP_NAME": "NEPTUNO ONSHORE",
     "VITE_APP_VERSION": "2.1.1"
   },
