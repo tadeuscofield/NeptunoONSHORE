@@ -127,7 +127,7 @@ app.post('/api/trial/login', async (req, res) => {
     }
 
     // Check for ADMIN code first
-    const TADEU_ADMIN_CODE = 'NEPTUNO-ADMIN-TADEU-2025';
+    const TADEU_ADMIN_CODE = 'admin2025';
     const TADEU_EMAIL = 'tadeu@neptunodescom.com';
 
     if (accessCode === TADEU_ADMIN_CODE) {
@@ -411,7 +411,7 @@ app.listen(PORT, () => {
   console.log(`🌐 CORS: http://localhost:5173`);
   console.log('\n📋 ADMIN LOGIN:');
   console.log(`   Email: tadeu@neptunodescom.com`);
-  console.log(`   Código: NEPTUNO-ADMIN-TADEU-2025`);
+  console.log(`   Senha: admin2025`);
   console.log('\n💡 Dica: Os códigos trial aparecem no console');
   console.log('='.repeat(60) + '\n');
 });

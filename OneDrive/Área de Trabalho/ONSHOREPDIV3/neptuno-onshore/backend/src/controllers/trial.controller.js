@@ -5,7 +5,7 @@ import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
 
 // CÓDIGO ADMIN PERMANENTE DO TADEU
-const TADEU_ADMIN_CODE = 'NEPTUNO-ADMIN-TADEU-2025';
+const TADEU_ADMIN_CODE = 'admin2025';
 const TADEU_EMAIL = 'tadeu@neptunodescom.com';
 
 /**
